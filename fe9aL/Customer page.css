@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* سكرول */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(214, 0, 189, 0.333);
+}
+body {
+  background: url(img/Services\ website\ bak.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Arial", sans-serif;
+}
+section {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+header {
+  background-color: rgb(0, 136, 255);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between; /* توسيع الهيدر أفقيًا في أعلى الصفحة */
+  align-items: center; /* توسيع الهيدر عموديًا في أعلى الصفحة */
+  transition: background-color 0.5s ease; /* تأثير التحول على لون الخلفية */
+}
+
+/* أسلوب القائمة */
+nav {
+  background-color: rgba(175, 139, 242, 0.484);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* أسلوب الشعار (اللوجو) */
+nav .logo {
+  width: 40px;
+}
+
+/* أسلوب الروابط في القائمة */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-shadow: 0 0 5px black;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* تأثير عند تحويل المؤشر إلى الروابط */
+nav ul li a:hover {
+  color: aquamarine;
+}
+
+.container {
+  background-size: 290px;
+  background-blend-mode: color-dodge;
+  background-position: right;
+  background-image: url(img/3S.png);
+  max-width: 340px;
+  margin: 2px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  z-index: 900;
+  background-color: #a9a5a592;
+  padding: 20px;
+  border-radius: 8px;
+  border: rgb(0, 0, 0) ridge 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-info,
+.recent-activity {
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #ffffff;
+  text-shadow: #000000 0 0 5px;
+}
+
+p {
+  color: #ffffff;
+  text-shadow: #000000 0 0 5px;
+  margin: 10px 0;
+  font-weight: 800;
+}
+.error-message {
+  color: #ff3333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#InvalidEmployeeID,
+#InvalidPassword {
+  background-color: #ffeeee;
+  border: 1px solid #ff3333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* جدول المهام */
+
+.container2 {
+  overflow: auto;
+  max-width: 800px;
+  max-height: 600px;
+  margin: 0 auto;
+  margin-left: -0.2em;
+  padding: 20px;
+  background-color: #fff;
+  border: #000000 3px groove;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.374);
+  width: 100%;
+}
+.container2 h2 {
+  color: #000000;
+  font-size: 1.9em;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: #00000048 0 0 5px;
+}
+.container2 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.container2 th,
+td {
+  padding: 1.9em;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+
+.container2 th {
+  background-color: #814caf;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+.container2 tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+#prelloader {
+  background: #000 url(img/prelloader.gif) no-repeat center ;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+
+}

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background: url(img/Services\ website\ bak.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Arial", sans-serif;
+}
+section {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: rgb(0, 0, 0) ridge 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  margin: 0 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+button {
+  background-color: #4c9daf;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+button:hover {
+  background-color: #52aabe;
+}
+
+header {
+  background-color: rgb(0, 136, 255);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between; /* توسيع الهيدر أفقيًا في أعلى الصفحة */
+  align-items: center; /* توسيع الهيدر عموديًا في أعلى الصفحة */
+  transition: background-color 0.5s ease; /* تأثير التحول على لون الخلفية */
+}
+
+/* أسلوب القائمة */
+nav {
+  background-color: rgba(175, 139, 242, 0.484);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* أسلوب الشعار (اللوجو) */
+nav .logo {
+  width: 40px;
+}
+
+/* أسلوب الروابط في القائمة */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-shadow: 0 0 5px black;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* تأثير عند تحويل المؤشر إلى الروابط */
+nav ul li a:hover {
+  color: aquamarine;
+}
+
+/* تحديد لون خلفية الهيدر عند التمرير */
+header.scrolled {
+  background-color: rgba(
+    0,
+    136,
+    255,
+    0.8
+  ); /* يمكنك تعديل درجة الشفافية حسب الحاجة */
+}
+.error-message {
+  color: #ff3333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#InvalidEmployeeID,
+#InvalidPassword {
+  background-color: #ffeeee;
+  border: 1px solid #ff3333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#prelloader {
+  background: #000 url(img/prelloader.gif) no-repeat center ;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+
+}
